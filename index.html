@@ -13,7 +13,7 @@
         window.onload = function () {
 
 
-            // Template string
+            // -------Template string-----
             // var kalimat = `
             // selamat belajar ES6
 
@@ -23,13 +23,43 @@
 
 
 
-            function siswa(nama, kelas, jurusan) {
-                console.log(`
-                nama siswa : ${nama} 
-                kelas : ${kelas} 
-                jurusan : ${jurusan}`)
+            // function siswa(nama, kelas, jurusan) {
+            //     console.log(`
+            //     nama siswa : ${nama} 
+            //     kelas : ${kelas} 
+            //     jurusan : ${jurusan}`)
+            // }
+            // siswa('nanda', 12, "komputer")
+
+            // -------membuat objek -------
+            // ---sytax ES5----
+            var nama = 'nanda'
+            var hobi = 'badminton'
+
+            var orang = {
+                nama,
+                hobi,
+                tutorial: function (x) {
+                    console.log(`Saat ini sedang membuat tutorial ${x}`)
+                }
             }
-            siswa('nanda', 12, "komputer")
+            console.log(orang.tutorial('ES6'))
+
+            // ---sytax ES6 tdk perlu ada tulisan function---
+            var orang = {
+                nama,
+                hobi,
+                tutorial(x) {
+                    console.log(`Saat ini sedang membuat tutorial ${x}`)
+                }
+            }
+            console.log(orang.tutorial('flutter'))
+
+
+
+
+
+
 
         }
     </script>

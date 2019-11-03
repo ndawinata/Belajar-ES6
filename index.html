@@ -105,20 +105,38 @@
 
             //mencegah duplikat data dengan set
 
-            var buah = ["Apel", "Jeruk", "Apel", "Rambutan", "Jeruk", "Rambutan"]
+            // var buah = ["Apel", "Jeruk", "Apel", "Rambutan", "Jeruk", "Rambutan"]
 
-            var setBuah = new Set(buah)
+            // var setBuah = new Set(buah)
 
-            console.log(buah)
+            // console.log(buah)
 
-            console.log(setBuah)
+            // console.log(setBuah)
 
-            //mengembalikan setBuah yg di filter ke buah
+            // //mengembalikan setBuah yg di filter ke buah
 
-            buah = [...setBuah]
+            // buah = [...setBuah]
 
-            console.log(buah)
+            // console.log(buah)
 
+
+            // --------- Spread Operator --------
+            // menggunkan operator (...)
+            var coding = ["PHP", "C#", "JAVA"]
+            console.log(coding) //output dalam bentuk array
+            console.log(...coding) //output bukan dalam bentuk array
+            // cara menngabungkan dua array
+            var coding2 = [...coding, "Javascript", "C++", "pascal"]
+            console.log(coding2)
+
+            var siswaBaru = ["nawi", 10, "perbankan"]
+            var siswa = (nama, kelas, jurusan) => { //menggunakan arrow func
+                console.log("nama Siswa : " + nama +
+                    " kelas : " + kelas +
+                    " Jurusan : " + jurusan
+                )
+            }
+            siswa(...siswaBaru)
         }
     </script>
 </body>

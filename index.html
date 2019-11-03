@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <h1>BUKA CONSOLE LOG</h1>
     <script>
         window.onload = function () {
 
@@ -33,32 +34,38 @@
 
             // -------membuat objek -------
             // ---sytax ES5----
-            var nama = 'nanda'
-            var hobi = 'badminton'
+            // var nama = 'nanda'
+            // var hobi = 'badminton'
 
-            var orang = {
-                nama,
-                hobi,
-                tutorial: function (x) {
-                    console.log(`Saat ini sedang membuat tutorial ${x}`)
-                }
-            }
-            console.log(orang.tutorial('ES6'))
+            // var orang = {
+            //     nama,
+            //     hobi,
+            //     tutorial: function (x) {
+            //         console.log(`Saat ini sedang membuat tutorial ${x}`)
+            //     }
+            // }
+            // console.log(orang.tutorial('ES6'))
 
-            // ---sytax ES6 tdk perlu ada tulisan function---
-            var orang = {
-                nama,
-                hobi,
-                tutorial(x) {
-                    console.log(`Saat ini sedang membuat tutorial ${x}`)
-                }
-            }
-            console.log(orang.tutorial('flutter'))
+            // // ---sytax ES6 tdk perlu ada tulisan function---
+            // var orang = {
+            //     nama,
+            //     hobi,
+            //     tutorial(x) {
+            //         console.log(`Saat ini sedang membuat tutorial ${x}`)
+            //     }
+            // }
+            // console.log(orang.tutorial('flutter'))
 
+            // --------STRING METHOD ---------
 
-
-
-
+            var str = "idrcorner";
+            var str1 = "membuat tutorial baru"
+            console.log(str.repeat(5))
+            console.log(str.startsWith("idr")) // cek apakah diawali dg idr
+            console.log(str.startsWith("corner"))
+            console.log(str.startsWith("corner", 3))
+            console.log(str.endsWith("corner"))
+            console.log(str1.includes("tutorial"))
 
 
         }

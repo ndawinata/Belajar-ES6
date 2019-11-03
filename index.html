@@ -69,23 +69,56 @@
 
             // ---------- Arrow Function -------
             // ---ES5---
-            var cetak = function (nama) {
-                console.log(nama)
-            }
-            cetak('bubuk')
+            // var cetak = function (nama) {
+            //     console.log(nama)
+            // }
+            // cetak('bubuk')
 
-            // ---ES6---
-            var cetak1 = (nama) => {
-                console.log(nama);
-                console.log(nama)
-            } // ada tanda kurung jika ada lebih dari satu perintah
-            cetak1("nanda")
-            //input cuma satu ndak perlu () | cara singkat
-            var cetak2 = nama => console.log(nama) // tidak pakai kurung {} bila perintah cuma 1
-            //input lebih dari satu harus pakai ()
-            var cetak3 = (nama, kelas) => console.log(`${nama} dan ${kelas}`)
-            cetak2('nanda Winata')
-            cetak3('nanda', 'ins7a')
+            // // ---ES6---
+            // var cetak1 = (nama) => {
+            //     console.log(nama);
+            //     console.log(nama)
+            // } // ada tanda kurung jika ada lebih dari satu perintah
+            // cetak1("nanda")
+            // //input cuma satu ndak perlu () | cara singkat
+            // var cetak2 = nama => console.log(nama) // tidak pakai kurung {} bila perintah cuma 1
+            // //input lebih dari satu harus pakai ()
+            // var cetak3 = (nama, kelas) => console.log(`${nama} dan ${kelas}`)
+            // cetak2('nanda Winata')
+            // cetak3('nanda', 'ins7a')
+
+
+            // -------------- SET ---------------
+
+            // var buah = new Set(); // set kelebihannya bersifat unik ndak boleh ada data yg sama
+            // buah.add("Mangga").add("Jambu").add("Apel").add("Jambu")
+            // console.log(buah.size)
+            // console.log(buah)
+            // buah.delete("Apel")
+            // console.log(buah.size)
+            // console.log(buah)
+            // buah.clear()
+            // console.log(buah.size)
+            // console.log(buah)
+            // buah.add("Jambu")
+            // console.log(buah.has("Jambu"))
+
+            //mencegah duplikat data dengan set
+
+            var buah = ["Apel", "Jeruk", "Apel", "Rambutan", "Jeruk", "Rambutan"]
+
+            var setBuah = new Set(buah)
+
+            console.log(buah)
+
+            console.log(setBuah)
+
+            //mengembalikan setBuah yg di filter ke buah
+
+            buah = [...setBuah]
+
+            console.log(buah)
+
         }
     </script>
 </body>
